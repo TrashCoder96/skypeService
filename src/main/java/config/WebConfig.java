@@ -1,5 +1,6 @@
 package config;
 
+import logic.SkypeComponent;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -20,7 +21,7 @@ import ws.SkypeEndPoint;
 
 @EnableWs
 @Configuration
-@ComponentScan(basePackageClasses = { SkypeEndPoint.class })
+@ComponentScan(basePackageClasses = { SkypeEndPoint.class, SkypeComponent.class })
 public class WebConfig extends WsConfigurerAdapter {
 
     @Bean
