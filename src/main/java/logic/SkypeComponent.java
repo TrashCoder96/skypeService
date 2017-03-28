@@ -54,7 +54,7 @@ public class SkypeComponent {
         String url = "https://login.microsoftonline.com/common/oauth2/v2.0/token";
         HttpClient client = HttpClientBuilder.create().build();
         HttpPost post = new HttpPost(url);
-        String content = "grant_type=client_credentials&client_id=3f964e45-49d2-4f12-91f9-2930b62c4268&client_secret=bgvYjrrqauwyjbohAHcNHHE&scope=https%3A%2F%2Fgraph.microsoft.com%2F.default";
+        String content = "grant_type=client_credentials&client_id=3f964e45-49d2-4f12-91f9-2930b62c4268&client_secret=wgMcYz83EHwKgWuUyY0nV7U&scope=https%3A%2F%2Fgraph.microsoft.com%2F.default";
 
         post.setEntity(new ByteArrayEntity(content.getBytes("UTF-8")));
         HttpResponse response = client.execute(post);
